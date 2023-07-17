@@ -1,0 +1,13 @@
+.images {
+  height: 300px;
+  border-radius: 5%;
+  opacity: 0.5;
+  filter: blur(2px);
+  transition: 1s ease-in-out;
+}
+.images:hover {
+  opacity: 1;
+  filter: none;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
