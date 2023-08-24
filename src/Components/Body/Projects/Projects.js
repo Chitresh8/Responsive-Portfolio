@@ -6,7 +6,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { projectsData } from "./ProjectsData";
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import { AnimatedComponent } from "../../MediaQueries/AnimatedComponent";
 
 export const Projects = () => {
@@ -68,6 +68,73 @@ export const Projects = () => {
                     {element.buttonText}
                   </a>
                 )}
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Button
+                    variant="contained"
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      bgcolor: "#08151c",
+                      color: "white",
+                      border: "1px solid white",
+                      fontFamily: "poppins",
+                      letterSpacing: "0px",
+                      transition: "1s ease-in-out",
+                      width: "90px",
+
+                      ":hover": {
+                        fontFamily: "poppins",
+                        border: "1px solid #08151c",
+                        boxShadow: "1px 1px 6px 7px rgb(255 255 255/ 47%)",
+                        letterSpacing: "5px",
+                        transition: "1s ease-in-out",
+                        width: "90px",
+                        backgroundColor: "white",
+                        color: "black",
+                        fontWeight: "bold",
+                      },
+                    }}
+                  >
+                    {element.buttonOne}
+                  </Button>
+
+                  <Button
+                    variant="contained"
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      bgcolor: "#08151c",
+                      color: "white",
+                      border: "1px solid white",
+                      fontFamily: "poppins",
+                      letterSpacing: "0px",
+                      transition: "1s ease-in-out",
+                      width: "90px",
+
+                      ":hover": {
+                        fontFamily: "poppins",
+                        border: "1px solid #08151c",
+                        boxShadow: "1px 1px 6px 7px rgb(255 255 255/ 47%)",
+                        letterSpacing: "5px",
+                        transition: "1s ease-in-out",
+                        width: "90px",
+                        backgroundColor: "white",
+                        color: "black",
+                        fontWeight: "bold",
+                      },
+                    }}
+                  >
+                    {element.buttonTwo}
+                  </Button>
+                </Box>
               </VerticalTimelineElement>
             );
           })}

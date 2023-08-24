@@ -6,7 +6,7 @@ export const educationalHistoryData = [
     title: "Sree Venkateswara College of Engineering",
     location: "Nellore",
     branch: "Bachelor of Mechanical Engineering",
-    date: "May 2015 - May 2018",
+    date: "April 2015 - April 2018",
     icon: <AutoStoriesIcon sx={{ color: "white" }} />,
   },
   {

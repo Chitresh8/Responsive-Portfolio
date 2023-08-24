@@ -1,24 +1,11 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import logo from "../Assets/Cb logo.jpg";
-import { AnimatedComponent } from "../MediaQueries/AnimatedComponent";
-import { useIntersectionObserver } from "@uidotdev/usehooks";
+import chitreshResume from "../Resume/Chitresh Babu.pdf";
 
 export const Header = () => {
-  const onDownload = () => {
-    const link = document.createElement("a");
-    link.download = `Chitresh Babu.pdf`;
-    link.click();
-  };
-
-  const [ref, entry] = useIntersectionObserver({
-    threshold: 0,
-    root: null,
-    rootMargin: "0px",
-  });
-
   return (
-    <AnimatedComponent>
+    <Box>
       <Box
         id="header"
         sx={styles.headerContainer}
@@ -32,19 +19,19 @@ export const Header = () => {
         </Box>
 
         <Box sx={styles.headerTitles}>
-          {/* <Button variant="filled">
-            <Box ref={ref}>
-              {entry?.isIntersecting && (
-                <Typography
-                  variant="p"
-                  sx={styles.fonts}
-                >
-                  Home
-                </Typography>
-              )}
-            </Box>
-          </Button> */}
           <Button
+            variant="filled"
+            sx={styles.headerBtn}
+          >
+            <Typography
+              variant="p"
+              sx={styles.fonts}
+            >
+              Home
+            </Typography>
+          </Button>
+          <Button
+            sx={styles.headerBtn}
             variant="filled"
             href="#aboutMe"
           >
@@ -56,36 +43,31 @@ export const Header = () => {
             </Typography>
           </Button>
           <Button
+            sx={styles.headerBtn}
             variant="filled"
             href="#portFolio"
           >
-            <Box ref={ref}>
-              {entry?.isIntersecting && (
-                <Typography
-                  variant="p"
-                  sx={styles.fonts}
-                >
-                  Portfolio
-                </Typography>
-              )}
-            </Box>
+            <Typography
+              variant="p"
+              sx={styles.fonts}
+            >
+              Portfolio
+            </Typography>
           </Button>
           <Button
+            sx={styles.headerBtn}
             href="#skills"
             variant="filled"
           >
-            <Box ref={ref}>
-              {entry?.isIntersecting && (
-                <Typography
-                  variant="p"
-                  sx={styles.fonts}
-                >
-                  Skills
-                </Typography>
-              )}
-            </Box>
+            <Typography
+              variant="p"
+              sx={styles.fonts}
+            >
+              Skills
+            </Typography>
           </Button>
           <Button
+            sx={styles.headerBtn}
             href="#contact"
             variant="filled"
           >
@@ -96,26 +78,33 @@ export const Header = () => {
               Contact Info
             </Typography>
           </Button>
+
           <Button
+            sx={styles.headerBtn}
             href="#downloadcv"
             variant="filled"
             type="submit"
           >
-            <Box ref={ref}>
-              {entry?.isIntersecting && (
-                <Typography
-                  variant="p"
-                  sx={styles.fonts}
-                  onClick={onDownload}
-                >
-                  Download CV
-                </Typography>
-              )}
-            </Box>
+            <Typography
+              variant="p"
+              sx={styles.fonts}
+            >
+              <a
+                href={chitreshResume}
+                download="Chitresh Babu.pdf"
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  "&:hover": { color: "#08151c" },
+                }}
+              >
+                Download CV
+              </a>
+            </Typography>
           </Button>
         </Box>
       </Box>
-    </AnimatedComponent>
+    </Box>
   );
 };
 
@@ -187,6 +176,17 @@ const styles = {
       "100%": { transform: "translateX(0)", opacity: 1 },
     },
   },
+  headerBtn: {
+    bgcolor: "#08151c",
+    color: "white",
+    fontFamily: "poppins",
+    transition: "2s ease-in-out",
+    ":hover": {
+      fontFamily: "poppins",
+      textDecoration: "underline",
+      transition: "2s ease-in-out",
+    },
+  },
   fonts: {
     fontFamily: "Poppins",
     animation: "animate 2s ease-in-out",
@@ -195,6 +195,13 @@ const styles = {
     },
     "@media(max-width:414px)": {
       fontSize: "small",
+    },
+  },
+  header: {
+    animation: "myAnimation 2s ease-in-out",
+    "@keyframes animate": {
+      "0%": { transform: "translateX(-100%)", opacity: 0 },
+      "100%": { transform: "translateX(0)", opacity: 1 },
     },
   },
 };

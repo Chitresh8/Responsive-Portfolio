@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import SendIcon from "@mui/icons-material/Send";
@@ -7,17 +8,33 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { AnimatedComponent } from "../MediaQueries/AnimatedComponent";
 import "./ContactInfo.css";
-import { useIntersectionObserver } from "@uidotdev/usehooks";
 
 export const ContactInfo = () => {
-  const [ref, entry] = useIntersectionObserver({
-    threshold: 0,
-    root: null,
-    rootMargin: "0px",
-  });
+  const cRef = useRef("");
+  useEffect(() => {
+    const scrollHandler = () => {
+      const value = cRef.current;
+      const top = value.getBoundingClientRect().top;
+      const height = window.innerHeight;
+      console.log("top", top);
+      console.log("height", height);
+      console.log("class", value.style.animation);
+
+      if (top < height) {
+        value.style.animation = "myAnimation 3s";
+      }
+    };
+
+    window.addEventListener("scroll", scrollHandler);
+
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
   return (
     <AnimatedComponent>
       <Box
+        ref={cRef}
         id="contact"
         sx={{
           display: "flex",
@@ -25,10 +42,6 @@ export const ContactInfo = () => {
           justifyContent: "center",
           gap: "10px",
           flexDirection: "column",
-          "@keyframes animate": {
-            "0%": { transform: "translateX(-100%)", opacity: 0 },
-            "100%": { transform: "translateX(0)", opacity: 1 },
-          },
         }}
       >
         <Typography
@@ -38,21 +51,19 @@ export const ContactInfo = () => {
           Contact Info
         </Typography>
         <AnimatedComponent picTime={"3s"}>
-          <Box ref={ref}>
-            {entry?.isIntersecting && (
-              <Box sx={styles.contact}>
-                <MailOutlineIcon /> Email :{" "}
-                <Typography variant="p">chitreshbabu8@gmail.com</Typography>
-                <CallIcon />
-                Mobile No: <Typography variant="p">+91 7396723764</Typography>
-                <GitHubIcon />
-                GitHub :{" "}
-                <Typography variant="p"> github.com/Chitresh8</Typography>
-                <LinkedInIcon />
-                LinkedIn :{" "}
-                <Typography variant="p">chitreshbabu/linkedin</Typography>
-              </Box>
-            )}
+          <Box
+            sx={styles.contact}
+            ref={cRef}
+          >
+            <MailOutlineIcon /> Email :
+            <Typography variant="p">chitreshbabu8@gmail.com</Typography>
+            <CallIcon />
+            Mobile No: <Typography variant="p">+91 7396723764</Typography>
+            <GitHubIcon />
+            GitHub : <Typography variant="p"> github.com/Chitresh8</Typography>
+            <LinkedInIcon />
+            LinkedIn :{" "}
+            <Typography variant="p">chitreshbabu/linkedin</Typography>
           </Box>
 
           <AnimatedComponent picTime={"3s"}>

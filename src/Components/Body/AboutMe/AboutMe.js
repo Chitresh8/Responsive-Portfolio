@@ -24,25 +24,42 @@ export const AboutMe = () => {
                 variant="p"
                 sx={styles.paragraph}
               >
-                Hello,I'm Chitresh. I have an Experience in developing
-                user-friendly and responsive web applications. Committed to
-                staying up-to-date with the latest industry trends and
-                continuously improving skills to provide exceptional user
-                experiences. I'm responsible for the design and implementation
-                of user interfaces (UIs) and UI components using React, a
-                front-end JavaScript library.
+                Hello,I'm{" "}
+                <span
+                  style={{
+                    fontWeight: "600",
+                    fontSize: "30px",
+                  }}
+                >
+                  Chitresh
+                </span>
+                . I have an Experience in developing user-friendly and
+                responsive web applications. Committed to staying up-to-date
+                with the latest industry trends and continuously improving
+                skills to provide exceptional user experiences. I'm responsible
+                for the design and implementation of user interfaces (UIs) and
+                UI components using React, a front-end JavaScript library.
               </Typography>
             </Box>
 
             <Box sx={styles.icons}>
-              <Button variant="filled">
-                <EmailIcon />
+              <Button
+                variant="filled"
+                href="#contact"
+              >
+                <EmailIcon sx={styles.aboutBtn} />
               </Button>
-              <Button variant="filled">
-                <GitHubIcon />
+              <Button
+                variant="filled"
+                href="#contact"
+              >
+                <GitHubIcon sx={styles.aboutBtn} />
               </Button>
-              <Button variant="filled">
-                <LinkedInIcon />
+              <Button
+                variant="filled"
+                href="#contact"
+              >
+                <LinkedInIcon sx={styles.aboutBtn} />
               </Button>
             </Box>
           </AnimatedComponent>
@@ -105,6 +122,24 @@ const styles = {
       justifyContent: "center",
       marginTop: "300px",
       flexDirection: "column",
+    },
+  },
+  aboutBtn: {
+    bgcolor: "#08151c",
+    color: "white",
+    fontFamily: "poppins",
+    letterSpacing: "0px",
+    transition: "0.5s ease-in-out",
+    borderRadius: "5px",
+    width: "30px",
+    ":hover": {
+      bgcolor: "white",
+      color: "#08151c",
+      fontFamily: "poppins",
+      boxShadow: "1px 1px 6px 7px rgb(255 255 255/ 47%)",
+      letterSpacing: "5px",
+      transition: "0.5s ease-in-out",
+      borderRadius: "5px",
     },
   },
   paragraph: {
