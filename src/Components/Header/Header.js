@@ -121,6 +121,8 @@ const styles = {
     right: "0",
     zIndex: "100",
     justifyContent: "space-between",
+    // position: "fixed",
+    // backgroundColor: "#08151c",
     "@media (max-width:414px)": {
       display: "flex",
       textAlign: "center",
