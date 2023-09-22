@@ -216,7 +216,6 @@ const styles = {
   image: {
     borderRadius: "27px",
     width: "243px",
-    boxShadow: "1px 1px 6px 7px rgb(255 255 255/ 47%)",
     transition: "smooth",
     "@media (max-width:414px)": {
       display: "flex",
