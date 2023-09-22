@@ -38,7 +38,7 @@ export const AboutMe = () => {
                 latest industry trends and continuously improving skills to
                 provide exceptional user experiences. I'm responsible for
                 designing and implementing user interfaces (UIs) and UI
-                components using React, a front-end JavaScript library.
+                components using React, a Front End JavaScript library.
               </Typography>
             </Box>
 
