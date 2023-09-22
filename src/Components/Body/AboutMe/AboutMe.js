@@ -33,12 +33,12 @@ export const AboutMe = () => {
                 >
                   Chitresh
                 </span>
-                . I have an Experience in developing user-friendly and
-                responsive web applications. Committed to staying up-to-date
-                with the latest industry trends and continuously improving
-                skills to provide exceptional user experiences. I'm responsible
-                for the design and implementation of user interfaces (UIs) and
-                UI components using React, a front-end JavaScript library.
+                . I have Experience in developing user-friendly and responsive
+                web applications. Committed to staying up-to-date with the
+                latest industry trends and continuously improving skills to
+                provide exceptional user experiences. I'm responsible for
+                designing and implementing user interfaces (UIs) and UI
+                components using React, a front-end JavaScript library.
               </Typography>
             </Box>
 
