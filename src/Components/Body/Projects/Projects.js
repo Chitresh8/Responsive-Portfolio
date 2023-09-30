@@ -43,12 +43,12 @@ export const Projects = () => {
                     },
                   }}
                   src={element.image}
-                  alt="image"
+                  alt={"projects"}
                 />
                 <img
                   style={{ display: "flex", height: "30px" }}
                   src={element.images}
-                  alt="images"
+                  alt={"projects"}
                 />
 
                 <h2 className="vertical-timeline-element-title">

@@ -56,14 +56,16 @@ export const ContactInfo = () => {
             ref={cRef}
           >
             <MailOutlineIcon /> Email :
-            <Typography variant="p">chitreshbabu8@gmail.com</Typography>
+            <Typography variant="p">chitresh916@gmail.com</Typography>
             <CallIcon />
-            Mobile No: <Typography variant="p">+91 7396723764</Typography>
+            Mobile No: <Typography variant="p">+91 8886216916</Typography>
             <GitHubIcon />
             GitHub : <Typography variant="p"> github.com/Chitresh8</Typography>
             <LinkedInIcon />
             LinkedIn :{" "}
-            <Typography variant="p">chitreshbabu/linkedin</Typography>
+            <Typography variant="p">
+              www.linkedin.com/in/chitresh-babu-alavuru-3a3085293
+            </Typography>
           </Box>
 
           <AnimatedComponent picTime={"3s"}>
@@ -72,7 +74,7 @@ export const ContactInfo = () => {
                 variant="contained"
                 endIcon={<SendIcon />}
                 onClick={() => {
-                  window.open("mailto:chitreshbabu8@gmail.com");
+                  window.open("mailto:chitresh916@gmail.com");
                 }}
                 sx={{
                   display: "flex",
@@ -105,7 +107,7 @@ export const ContactInfo = () => {
                 variant="contained"
                 endIcon={<CallIcon />}
                 onClick={() => {
-                  window.open("tel:+91 7396723764");
+                  window.open("tel:+91 8886216916");
                 }}
                 sx={{
                   display: "flex",

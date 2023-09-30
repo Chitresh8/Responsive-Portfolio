@@ -1,7 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import logo from "../Assets/Cb logo.jpg";
-import chitreshResume from "../Resume/Chitresh Babu.pdf";
+import chitreshResume from "../Resume/Chitresh Babu Alavuru.pdf";
 
 export const Header = () => {
   return (

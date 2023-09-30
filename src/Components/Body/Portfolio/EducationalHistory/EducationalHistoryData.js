@@ -6,7 +6,7 @@ export const educationalHistoryData = [
     title: "Sree Venkateswara College of Engineering",
     location: "Nellore",
     branch: "Bachelor of Mechanical Engineering",
-    date: "April 2015 - April 2018",
+    date: "May 2015 - April 2018",
     icon: <AutoStoriesIcon sx={{ color: "white" }} />,
   },
   {
@@ -25,33 +25,4 @@ export const educationalHistoryData = [
     date: "March 2012",
     icon: <AutoStoriesIcon sx={{ color: "white" }} />,
   },
-  // {
-  //   id: 4,
-  //   title: "Oak Ridge College",
-  //   location: "South Warren, Geshington",
-  //   description:
-  //     "Online Course in Magical Beasts and Wonders of the World - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-  //   buttonText: "Course Certificate",
-  //   date: "September 2011",
-  //   icon: "school",
-  // },
-  // {
-  //   id: 5,
-  //   title: "Hawking College",
-  //   location: "Skystead, Craonia",
-  //   description:
-  //     "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-  //   buttonText: "College Projects",
-  //   date: "2007 - 2011",
-  //   icon: "school",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Marble Hills Grammar School",
-  //   location: "Dragontail, Ascana",
-  //   description:
-  //     "Highschool - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-  //   date: "2003 - 2007",
-  //   icon: "school",
-  // },
 ];

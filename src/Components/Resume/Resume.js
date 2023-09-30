@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@mui/material";
 
 export const Resume = () => {
-  const resumeUrl = "Chitresh Babu.pdf";
+  const resumeUrl = "Chitresh Babu Alavuru.pdf";
 
   return (
     <Button

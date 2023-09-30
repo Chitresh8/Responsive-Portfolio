@@ -115,40 +115,12 @@ export const projectsData = [
       <Typography
         variant="p"
         onClick={() => {
-          window.open("https://github.com/Chitresh8/Facebook-clone-Project");
+          window.open("https://github.com/Chitresh8/Responsive-Portfolio");
         }}
       >
         CODE
       </Typography>
     ),
-    buttonTwo: (
-      <Typography
-        variant="p"
-        onClick={() => {
-          // window.open("https://github.com/Chitresh8/Facebook-clone-Project");
-        }}
-      >
-        LIVE
-      </Typography>
-    ),
+    buttonTwo: <Typography variant="p">LIVE</Typography>,
   },
-  // {
-  //   id: 5,
-  //   title: "Hawking College",
-  //   location: "Skystead, Craonia",
-  //   description:
-  //     "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-  //   buttonText: "College Projects",
-  //   date: "2007 - 2011",
-  //   icon: "school",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Marble Hills Grammar School",
-  //   location: "Dragontail, Ascana",
-  //   description:
-  //     "Highschool - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-  //   date: "2003 - 2007",
-  //   icon: "school",
-  // },
 ];
