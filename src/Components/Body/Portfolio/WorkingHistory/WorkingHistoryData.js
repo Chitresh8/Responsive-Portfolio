@@ -3,7 +3,7 @@ import WorkOutlineOutlinedIcon from "@mui/icons-material/WorkOutlineOutlined";
 export const workingHistoryData = [
   {
     id: 1,
-    title: "Freelancer",
+    title: "Individual Consultants",
     location: "Work From Home",
     branch: "React Front End Developer",
     date: "Sept 2020 - Present",
