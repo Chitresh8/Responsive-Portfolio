@@ -1,3 +1,15 @@
-html {
-  scroll-behavior: smooth;
+/* In your global CSS or style */
+body {
+  scroll-behavior: smooth; /* Optional: for smooth scrolling */
+  overflow: hidden; /* Hide the default scrollbar */
+}
+
+/* Hide the scrollbar but keep scrolling */
+body::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+body {
+  overflow-y: scroll; /* Allows the page to scroll while hiding the scrollbar */
 }
