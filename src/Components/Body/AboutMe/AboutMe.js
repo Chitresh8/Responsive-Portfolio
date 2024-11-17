@@ -33,7 +33,7 @@ export const AboutMe = () => {
                 >
                   Chitresh
                 </span>
-                . I have 4+ Years Experience in developing user-friendly and
+                . I have 4 Years Experience in developing user-friendly and
                 responsive web applications. Committed to staying up-to-date
                 with the latest industry trends and continuously improving
                 skills to provide exceptional user experiences. I'm responsible
